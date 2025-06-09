@@ -2,52 +2,130 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tugas Akhir</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
-      text-align: center;
-      padding: 50px;
     }
 
-    h1 {
-      color: #2c3e50;
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
 
     button {
-      background-color: #3498db;
+      background-color: #27ae60;
       color: white;
+      padding: 10px 20px;
       border: none;
-      padding: 15px 30px;
-      font-size: 16px;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      font-size: 16px;
+      margin-top: 10px;
     }
 
     button:hover {
-      background-color: #2980b9;
+      background-color: #219150;
     }
 
-    #output {
-      margin-top: 20px;
-      font-size: 18px;
+    #contactMessage {
+      margin-top: 15px;
       color: #27ae60;
     }
   </style>
 </head>
 <body>
-  <h1>Selamat datang di Tugas Akhir Saya</h1>
-  <p>Ini adalah halaman demo yang di-host di GitHub Pages.</p>
-  <button onclick="tampilkanPesan()">Klik Saya</button>
-  <div id="output"></div>
+  <header>
+    <h1>Portofolio Saya</h1>
+    <p>Mahasiswa Teknik Informatika | Web Developer | Problem Solver</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang Saya</a>
+    <a href="#projek">Projek</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo! Saya adalah mahasiswa Teknik Informatika yang antusias di bidang pengembangan web dan teknologi.
+      Saya suka membangun aplikasi sederhana dan mempelajari hal-hal baru seputar pemrograman.
+    </p>
+  </section>
+
+  <section id="projek">
+    <h2>Projek Saya</h2>
+    <div class="project">
+      <h3>Aplikasi To-Do List</h3>
+      <p>Sebuah aplikasi sederhana untuk mencatat tugas harian. Dibuat dengan HTML, CSS, dan JavaScript murni.</p>
+    </div>
+    <div class="project">
+      <h3>Website Toko Online</h3>
+      <p>Prototype toko online statis untuk belajar layout dan styling responsif menggunakan CSS Flexbox.</p>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Saya</h2>
+    <p>Ingin kerja sama atau ngobrol? Klik tombol di bawah:</p>
+    <button onclick="kirimPesan()">Hubungi Saya</button>
+    <div id="contactMessage"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nama Kamu. Semua hak dilindungi.</p>
+  </footer>
 
   <script>
-    function tampilkanPesan() {
-      document.getElementById('output').innerText = 'Tombol berhasil diklik! 🎉';
+    function kirimPesan() {
+      document.getElementById("contactMessage").innerText =
+        "Terima kasih! Saya akan menghubungi Anda secepatnya.";
     }
   </script>
 </body>
