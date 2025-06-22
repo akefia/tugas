@@ -82,6 +82,14 @@
       padding-left: 20px;
     }
 
+    .profile-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
     footer {
       background-color: #2c3e50;
       color: white;
@@ -114,12 +122,20 @@
     a {
       color: #1abc9c;
     }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+      margin-top: 20px;
+      border-left: 5px solid #ccc;
+      padding-left: 15px;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="tugas/bayz.jpg" alt="Foto Bayz">
+    <img src="bayz.jpg" alt="Foto Bayz">
     <h1>Portofolio Saya</h1>
     <p>Mahasiswa Teknik Informatika | Web Developer | CyberSec Enthusiast</p>
   </header>
@@ -133,10 +149,31 @@
 
   <section id="tentang">
     <h2>Tentang Saya</h2>
-    <p>
-      Halo! Saya Bayz dari STT SIKMA MALANG. Saya mahasiswa Teknik Informatika yang antusias dalam pengembangan web dan cybersecurity.
-      Saya suka membangun aplikasi sederhana dan terus belajar hal-hal baru dalam pemrograman dan keamanan informasi.
-    </p>
+    <p>Halo! Saya <strong>Bayz Akefia</strong>, mahasiswa <strong>Teknik Informatika</strong> di <strong>STT SIKMA Malang</strong>.</p>
+
+    <ul>
+      <li><strong>Nama:</strong> Bayz Akefia</li>
+      <li><strong>Domisili:</strong> Malang, Jawa Timur</li>
+      <li><strong>Pendidikan:</strong> STT SIKMA Malang</li>
+      <li><strong>Minat:</strong> Web Development, Ethical Hacking</li>
+      <li><strong>Hobi:</strong> Ngoding, membaca teknologi, bermain catur</li>
+    </ul>
+
+    <div class="profile-card">
+      <p>Saya adalah seseorang yang selalu ingin tahu dan tidak pernah berhenti belajar. Fokus utama saya adalah membangun solusi digital yang aman dan efisien, terutama di bidang web dan keamanan data.</p>
+      <p>Saya percaya bahwa teknologi harus dimanfaatkan untuk memecahkan masalah sehari-hari, dan saya ingin menjadi bagian dari solusi tersebut.</p>
+    </div>
+
+    <h3>Riwayat Singkat</h3>
+    <ul>
+      <li>2022 - Sekarang: Mahasiswa Teknik Informatika STT SIKMA</li>
+      <li>2024: Magang di Startup Web Dev (Front-End)</li>
+      <li>2023: Pelatihan Dasar Cybersecurity oleh Kominfo</li>
+    </ul>
+
+    <blockquote>
+      "Belajar bukan untuk tahu lebih banyak, tapi untuk bisa berbuat lebih baik."
+    </blockquote>
   </section>
 
   <section id="projek">
@@ -191,5 +228,6 @@
       document.querySelectorAll('section')[0].classList.add('active');
     });
   </script>
+
 </body>
 </html>
