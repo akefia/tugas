@@ -172,13 +172,11 @@
   </footer>
 
   <script>
-    // Fungsi kirim pesan WhatsApp
     function kirimPesan() {
       document.getElementById("contactMessage").innerHTML =
         'Hubungi saya melalui WhatsApp: <a href="https://wa.me/62895375708400" target="_blank">Lets Connect!</a>';
     }
 
-    // Scroll animation untuk section
     window.addEventListener('scroll', function () {
       const sections = document.querySelectorAll('section');
       sections.forEach(sec => {
@@ -189,7 +187,6 @@
       });
     });
 
-    // Aktifkan animasi untuk section pertama saat load
     window.addEventListener('load', function () {
       document.querySelectorAll('section')[0].classList.add('active');
     });
