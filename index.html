@@ -3,231 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Bayz</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portofolio Saya</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #dbeafe, #e0f2fe); /* Gradasi soft blue */
+      background: linear-gradient(to bottom right, #dbefff, #f5faff); /* Gradasi lembut biru */
       color: #333;
-      scroll-behavior: smooth;
     }
 
     header {
-      background: linear-gradient(135deg, #3b82f6, #60a5fa); /* biru lembut */
+      background-color: #2c3e50;
       color: white;
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #1e3a8a;
-      margin-bottom: 15px;
-    }
-
     nav {
-      background-color: #2563eb;
+      background-color: #34495e;
       display: flex;
       justify-content: center;
-      padding: 12px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 20px;
+      margin: 0 15px;
       font-weight: bold;
-      transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #93c5fd;
+      text-decoration: underline;
     }
 
     section {
+      background-color: #e0f0ff; /* Soft blue section */
       padding: 50px 20px;
       max-width: 1000px;
-      margin: auto;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
       opacity: 0;
       transform: translateY(40px);
       transition: 0.8s ease-out;
     }
 
-    .active {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-    }
-
     .project {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .profile-card {
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     footer {
-      background-color: #1e3a8a;
+      background-color: #2c3e50;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
     button {
-      background-color: #2563eb;
+      background-color: #27ae60;
       color: white;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-size: 16px;
-      transition: background-color 0.3s;
+      margin-top: 10px;
     }
 
     button:hover {
-      background-color: #1d4ed8;
+      background-color: #219150;
     }
 
     #contactMessage {
-      margin-top: 20px;
-      color: #1e40af;
-      font-weight: bold;
+      margin-top: 15px;
+      color: #27ae60;
     }
 
-    a {
-      color: #2563eb;
-    }
-
-    blockquote {
-      font-style: italic;
-      color: #555;
-      margin-top: 20px;
-      border-left: 5px solid #ccc;
-      padding-left: 15px;
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #2c3e50;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
 <body>
 
   <header>
-   <img src="https://akefia.github.io/tugas/bayz.jpg" alt="Foto Bayz">
     <h1>Portofolio Saya</h1>
-    <p>Mahasiswa Teknik Informatika | Web Developer | CyberSec Enthusiast</p>
+    <p>Mahasiswa Teknik Informatika | Web Developer | CyberSec</p>
   </header>
 
   <nav>
-    <a href="#tentang"><i class="fas fa-user"></i> Tentang</a>
-    <a href="#projek"><i class="fas fa-code"></i> Projek</a>
-    <a href="#skills"><i class="fas fa-tools"></i> Keahlian</a>
-    <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a>
+    <a href="#tentang">Tentang Saya</a>
+    <a href="#projek">Projek</a>
+    <a href="#kontak">Kontak</a>
   </nav>
 
   <section id="tentang">
     <h2>Tentang Saya</h2>
-    <p>Halo! Saya <strong>Bayz Akefia</strong>, mahasiswa <strong>Teknik Informatika</strong> di <strong>STT SIKMA Malang</strong>.</p>
-
-    <ul>
-      <li><strong>Nama:</strong> Bayz Akefia</li>
-      <li><strong>Domisili:</strong> Malang, Jawa Timur</li>
-      <li><strong>Pendidikan:</strong> STT SIKMA Malang</li>
-      <li><strong>Minat:</strong> Web Development, Ethical Hacking</li>
-      <li><strong>Hobi:</strong> Ngoding, membaca teknologi, bermain catur</li>
-    </ul>
-
-    <div class="profile-card">
-      <p>Saya adalah seseorang yang selalu ingin tahu dan tidak pernah berhenti belajar. Fokus utama saya adalah membangun solusi digital yang aman dan efisien, terutama di bidang web dan keamanan data.</p>
-      <p>Saya percaya bahwa teknologi harus dimanfaatkan untuk memecahkan masalah sehari-hari, dan saya ingin menjadi bagian dari solusi tersebut.</p>
-    </div>
-
-    <h3>Riwayat Singkat</h3>
-    <ul>
-      <li>2022 - Sekarang: Mahasiswa Teknik Informatika STT SIKMA</li>
-      <li>2024: Magang di Startup Web Dev (Front-End)</li>
-      <li>2023: Pelatihan Dasar Cybersecurity oleh Kominfo</li>
-    </ul>
-
-    <blockquote>
-      "Belajar bukan untuk tahu lebih banyak, tapi untuk bisa berbuat lebih baik."
-    </blockquote>
-  </section>
-
-  <section id="projek">
-    <h2>Projek Saya</h2>
-    <div class="project">
-      <h3>Aplikasi To-Do List</h3>
-      <p>Sebuah aplikasi sederhana untuk mencatat tugas harian. Dibuat dengan HTML, CSS, dan JavaScript murni.</p>
-    </div>
-    <div class="project">
-      <h3>Aplikasi Face Recognize</h3>
-      <p>Prototype Face Recognize untuk absensi menggunakan Python dan Flutter.</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Keahlian</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript (Web Frontend)</li>
-      <li>Python (Flask, Face Recognition)</li>
-      <li>Cybersecurity dasar (Wireshark, Burp Suite, Nmap)</li>
-      <li>Version Control (Git, GitHub)</li>
-    </ul>
-  </section>
-
-  <section id="kontak">
-    <h2>Kontak Saya</h2>
-    <button onclick="kirimPesan()"><i class="fab fa-whatsapp"></i> Hubungi Saya</button>
-    <div id="contactMessage"></div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Akefia</p>
-  </footer>
-
-  <script>
-    function kirimPesan() {
-      document.getElementById("contactMessage").innerHTML =
-        'Hubungi saya melalui WhatsApp: <a href="https://wa.me/62895375708400" target="_blank">Lets Connect!</a>';
-    }
-
-    window.addEventListener('scroll', function () {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          sec.classList.add('active');
-        }
-      });
-    });
-
-    window.addEventListener('load', function () {
-      document.querySelectorAll('section')[0].classList.add('active');
-    });
-  </script>
-
-</body>
-</html>
+    <img class="profile" src="https://akefia.github.io/tugas/bayz.jpg" alt="Foto Bayz">
+    <p>
+      Halo!
