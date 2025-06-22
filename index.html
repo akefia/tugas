@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #dbefff, #f5faff);
+      background: linear-gradient(to bottom right, #d0e8ff, #ffffff);
       color: #333;
       line-height: 1.6;
     }
@@ -28,14 +28,13 @@
       background-color: #34495e;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       padding: 10px 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 8px 15px;
+      margin: 0 15px;
       font-weight: bold;
     }
 
@@ -44,24 +43,27 @@
     }
 
     .container {
-      max-width: 960px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: auto;
       padding: 20px;
     }
 
     section {
-      background-color: #e0f0ff;
+      background-color: #f9fcff;
       padding: 40px 30px;
       margin: 30px 0;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      opacity: 0;
-      transform: translateY(40px);
-      transition: 0.8s ease-out;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
     }
 
-    section p {
-      text-align: justify;
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      border: 4px solid #2c3e50;
     }
 
     .project {
@@ -77,7 +79,6 @@
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
     button {
@@ -98,17 +99,6 @@
     #contactMessage {
       margin-top: 15px;
       color: #27ae60;
-    }
-
-    img.profile {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px;
-      border: 4px solid #2c3e50;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
     @media (max-width: 600px) {
@@ -141,8 +131,8 @@
       <h2>Tentang Saya</h2>
       <img class="profile" src="https://akefia.github.io/tugas/bayz.jpg" alt="Foto Bayz">
       <p>
-        Halo! Saya Bayz dari STT SIKMA Malang, seorang mahasiswa Teknik Informatika yang sangat tertarik pada pengembangan web dan keamanan siber.
-        Saya suka membangun aplikasi sederhana yang bisa membantu banyak orang serta selalu tertarik untuk belajar hal baru seputar teknologi dan pemrograman.
+        Halo! Saya Bayz dari STT SIKMA Malang, mahasiswa Teknik Informatika yang antusias terhadap pengembangan web dan keamanan siber.
+        Saya senang membangun aplikasi sederhana yang bermanfaat serta mempelajari hal baru dalam dunia teknologi dan pemrograman.
       </p>
     </section>
 
@@ -150,7 +140,7 @@
       <h2>Projek Saya</h2>
       <div class="project">
         <h3>Aplikasi To-Do List</h3>
-        <p>Sebuah aplikasi sederhana untuk mencatat tugas harian. Dibuat dengan HTML, CSS, dan JavaScript murni.</p>
+        <p>Aplikasi sederhana untuk mencatat tugas harian, dibuat dengan HTML, CSS, dan JavaScript murni.</p>
       </div>
       <div class="project">
         <h3>Aplikasi Face Recognize</h3>
@@ -172,4 +162,9 @@
   <script>
     function kirimPesan() {
       document.getElementById("contactMessage").innerHTML =
-        'Hubungi saya melalui WhatsApp: <a href="https://wa.me/628
+        'Hubungi saya melalui WhatsApp: <a href="https://wa.me/62895375708400" target="_blank">Lets Connect!</a>';
+    }
+  </script>
+
+</body>
+</html>
