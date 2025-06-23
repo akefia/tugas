@@ -3,67 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio Saya</title>
+  <title>Portofolio Muhammad Gusti Bayu Rizky</title>
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #d9eefe, #ffffff);
-      color: #333;
+      background: linear-gradient(to bottom right, #e6f4ff, #ffffff);
+      color: #2c3e50;
       line-height: 1.6;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
     }
 
     nav {
       background-color: #34495e;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
+      gap: 30px;
+      padding: 15px 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #00bfff;
     }
 
     .container {
       max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     section {
       background-color: #f9fcff;
-      padding: 40px 30px;
-      margin: 30px 0;
+      padding: 40px;
+      margin-bottom: 30px;
       border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #2c3e50;
     }
 
     .profile {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       display: block;
       margin: 0 auto 20px;
-      border: 4px solid #2c3e50;
+      border: 5px solid #2c3e50;
     }
 
     .project {
@@ -71,7 +90,33 @@
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #00a884;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #007a63;
+    }
+
+    #contactMessage {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #007a63;
     }
 
     footer {
@@ -79,32 +124,13 @@
       color: white;
       text-align: center;
       padding: 20px;
-    }
-
-    button {
-      background-color: #27ae60;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background-color: #219150;
-    }
-
-    #contactMessage {
-      margin-top: 15px;
-      color: #27ae60;
+      font-size: 14px;
     }
 
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
       }
 
       section {
@@ -117,7 +143,7 @@
 
   <header>
     <h1>Portofolio Saya</h1>
-    <p>Mahasiswa Teknik Informatika | Web Developer | CyberSec</p>
+    <p>Mahasiswa Teknik Informatika | Web Developer | CyberSec Enthusiast</p>
   </header>
 
   <nav>
@@ -130,9 +156,8 @@
     <section id="tentang">
       <h2>Tentang Saya</h2>
       <img class="profile" src="https://akefia.github.io/tugas/bayz.jpg" alt="Foto Bayz">
-      <p>
-        Halo! Saya Muhammad Gusti Bayu Rizky dari STT STIKMA Malang, Saya adalah mahasiswa Teknik Informatika yang antusias terhadap pengembangan web dan keamanan siber.
-        Saya senang membangun aplikasi sederhana yang bermanfaat serta mempelajari hal baru dalam dunia teknologi dan pemrograman.
+      <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+        Halo! Saya <strong>Muhammad Gusti Bayu Rizky</strong> dari STT STIKMA Malang. Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar dalam pengembangan web dan keamanan siber. Saya senang membangun aplikasi sederhana yang memiliki nilai manfaat serta terus mempelajari hal-hal baru di dunia teknologi.
       </p>
     </section>
 
@@ -140,30 +165,32 @@
       <h2>Projek Saya</h2>
       <div class="project">
         <h3>Aplikasi Aritmatika Menggunakan Python</h3>
-        <p>Aplikasi perhitungan sederhana menggunakan Bahas Python.</p>
+        <p>Sebuah aplikasi perhitungan aritmatika dasar yang dibuat menggunakan bahasa Python untuk latihan logika dan pemahaman dasar pemrograman.</p>
       </div>
       <div class="project">
         <h3>Aplikasi Face Recognize</h3>
-        <p>Face Recognize untuk absensi menggunakan Python dan Flutter yang Saya buat bersama team saya.</p>
-        <p>Tujuan aplikasi ini dibuat untuk memudahkan dan membantu perusahaan agar tidak terjadinya titip absen oleh oknum karyawan serta lebih fleksibel karena absensi bisa dilakukan dari maksimal jarak 10 meter dari ruangan yang ditentukan</p>
+        <p>Sebuah aplikasi presensi menggunakan teknologi Face Recognize dengan Python dan Flutter, dibuat bersama tim saya.</p>
+        <p>Tujuan aplikasi ini adalah untuk memudahkan dan meningkatkan keamanan absensi di lingkungan kerja, dengan sistem verifikasi wajah yang akurat dan radius presensi maksimal 10 meter dari lokasi tertentu.</p>
       </div>
     </section>
 
     <section id="kontak">
       <h2>Kontak Saya</h2>
-      <button onclick="kirimPesan()">Hubungi Saya</button>
-      <div id="contactMessage"></div>
+      <div style="text-align: center;">
+        <button onclick="kirimPesan()">Hubungi Saya</button>
+        <div id="contactMessage"></div>
+      </div>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Akefia</p>
+    <p>&copy; 2025 Muhammad Gusti Bayu Rizky</p>
   </footer>
 
   <script>
     function kirimPesan() {
       document.getElementById("contactMessage").innerHTML =
-        'Hubungi saya melalui WhatsApp: <a href="https://wa.me/62895375708400" target="_blank">Lets Connect!</a>';
+        'Hubungi saya via WhatsApp: <a href="https://wa.me/62895375708400" target="_blank" style="color:#00a884;">Lets Connect!</a>';
     }
   </script>
 
